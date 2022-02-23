@@ -161,7 +161,7 @@ window.onValue(compulsory_text, (snapshot) => {
                 html += "</nav>";
             html += "</div>";
         html += "</div>";
-        document.getElementById("ct-content-flexbox").innerHTML += html;
+        document.getElementById("ct-custom-flexbox").innerHTML += html;
 
     });
 });
