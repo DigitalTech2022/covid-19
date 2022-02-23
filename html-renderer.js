@@ -36,7 +36,7 @@ onValue(compulsory_text, (snapshot) => {
             varList[stringList.indexOf(data.key)] = data.val();
         });
 
-       var html = "";
+        var html = "";
         html += "<div class='ct-content-div'>";
             html += "<div class='ct-content-first-row'>";
                 html += "<div class='ct-content-case-number-and-date'>";
@@ -130,9 +130,9 @@ onValue(compulsory_text, (snapshot) => {
                     }
                         html += "<div class='testing-date-sub-heading'>第三次檢測日期</div>";
                         html += "<div class='testing-date-heading-div'>";
-                            html += "<h2 class='testing-date-heading w-dyn-bind-empty'>" + varList[14] + "</h2>";
+                            html += "<h2 class='testing-date-heading'>" + varList[14] + "</h2>";
                             html += "<h2 class='testing-date-heading-divider'>-</h2>";
-                            html += "<h2 class='testing-date-heading w-dyn-bind-empty'>" + varList[15] + "</h2>";
+                            html += "<h2 class='testing-date-heading'>" + varList[15] + "</h2>";
                             if(varList[16]== "Yes"){
                                 html += "<div class='testing-date-indication'></div>";
                             } else {
@@ -186,9 +186,9 @@ onValue(compulsory_text, (snapshot) => {
                         }
                             html += "<div class='testing-date-sub-heading'>第三次檢測日期</div>";
                             html += "<div class='testing-date-heading-div'>";
-                                html += "<h5 class='testing-date-heading w-dyn-bind-empty'>" + varList[14] + "</h5>";
+                                html += "<h5 class='testing-date-heading'>" + varList[14] + "</h5>";
                                 html += "<h5 class='testing-date-heading-divider'>-</h5>";
-                                html += "<h5 class='testing-date-heading w-dyn-bind-empty'>" + varList[15] + "</h5>";
+                                html += "<h5 class='testing-date-heading'>" + varList[15] + "</h5>";
                                 if(varList[16]== "Yes"){
                                     html += "<div class='testing-date-indication'></div>";
                                 } else {
