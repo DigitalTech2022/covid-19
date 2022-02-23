@@ -18,7 +18,6 @@ var second_testing_indication;
 var third_testing_start; 
 var third_testing_end;
 var third_testing_indication; 
-var webflow_dropdown_count = 2;
 
 
 // Connect to Firebase Realtim Database
@@ -73,30 +72,6 @@ onValue(compulsory_text, (snapshot) => {
                 html += "</div>";
             html += "</div>";
 
-
-            html += "<div data-hover='false' data-delay='0' data-w-id='d3b00914-fb7d-6ee0-9890-ce02db0724a9' style='height:45px' class='ct-content-second-row-dropdown w-dropdown'>";
-                html += "<div class='second-row-accordion-toggle w-dropdown-toggle'>";
-                    html += "<div class='specific-date-header-div'>";
-                        html += "<h6 class='ct-content-specific-date-heading'>指明期間及時段</h6>";
-                        html += "<h6 class='ct-content-specific-date-description'>(視情況而定任何一個 期間及時段)</h6>";
-                    html += "</div>";
-                    html += "<div data-w-id='d3b00914-fb7d-6ee0-9890-ce02db0724b4' style='-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)' class='dropdown-arrow'></div>";
-                html += "</div>";
-                html += "<nav class='dropdown-list w-dropdown-list'>";
-                    html += "<div class='specific-date-wrapper'>";
-                        html += "<div class='specific-date-div'>";
-                            html += "<div class='specific-date-heading-div'>";
-                                html += "<h5 class='specific-date-heading'>" + varList[5] + "</h5>";
-                                html += "<h5 class='specific-date-heading-description'>-</h5>";
-                                html += "<h5 class='specific-date-heading'>" + varList[6] + "</h5>";
-                            html += "</div>";
-                            html += "<div class='specific-date-description'>(曾身處指明場所超過兩小時)</div>";
-                        html += "</div>";
-                    html += "</div>";
-                html += "</nav>";
-            html += "</div>";
-
-
             html += "<div class='ct-content-separated-line'></div>";
             html += "<div class='ct-content-third-row'>";
                 html += "<h4 class='ct-content-testing-dates-heading'>須進行檢測日期</h4>";
@@ -150,66 +125,6 @@ onValue(compulsory_text, (snapshot) => {
                         html += "</div>";
                     html += "</div>";
                 html += "</div>";
-            html += "</div>";
-
-
-            webflow_dropdown_count += 1;
-            html += "<div data-hover='false' data-w-id='3f3dea53-7180-03b5-4c3e-c9b4f0db25bd' data-delay='0' style='height: 24px;' class='ct-content-third-row-dropdown w-dropdown'>";
-                html += "<div class='third-row-accordion-toggle w-dropdown-toggle' id='w-dropdown-toggle-"+webflow_dropdown_count+"' aria-controls='w-dropdown-list-"+  webflow_dropdown_count +"' aria-haspopup='menu' aria-expanded='false' role='button' tabindex='0'>";
-                    html += "<h6 class='ct-content-testing-dates-heading'>須進行檢測日期</h6>";
-                    html += "<div data-w-id='3f3dea53-7180-03b5-4c3e-c9b4f0db25c8' style='transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;' class='dropdown-arrow'></div>";
-                html += "</div>";
-                html += "<nav class='dropdown-list w-dropdown-list' id='w-dropdown-list-"+webflow_dropdown_count+"' aria-labelledby='w-dropdown-toggle-"+webflow_dropdown_count+"'>";
-                    html += "<div class='testing-date-flexbox'>";
-                        html += "<div class='testing-date-div testing-date-1'>";
-                            html += "<div class='testing-date-sub-heading'>第一次檢測日期</div>";
-                            html += "<div class='testing-date-heading-div'>";
-                                html += "<h5 class='testing-date-heading'>" + varList[8] + "</h5>";
-                                html += "<h5 class='testing-date-heading-divider'>-</h5>";
-                                html += "<h5 class='testing-date-heading'>" + varList[9] + "</h5>";
-                                if(varList[10]== "Yes"){
-                                    html += "<div class='testing-date-indication'></div>";
-                                } else {
-                                    html += "<div class='testing-date-indication w-condition-invisible'></div>";
-                                }
-                            html += "</div>";
-                        html += "</div>";
-                        if(varList[11] == ""){
-                            html += "<div class='testing-date-div testing-date-2 w-condition-invisible'>";
-                        } else {
-                            html += "<div class='testing-date-div testing-date-2'>";
-                        }
-                            html += "<div class='testing-date-sub-heading'>第二次檢測日期</div>";
-                            html += "<div class='testing-date-heading-div'>";
-                                html += "<h5 class='testing-date-heading'>" + varList[11] + "</h5>";
-                                html += "<h5 class='testing-date-heading-divider'>-</h5>";
-                                html += "<h5 class='testing-date-heading'>" + varList[12] + "</h5>";
-                                if(varList[13]== "Yes"){
-                                    html += "<div class='testing-date-indication'></div>";
-                                } else {
-                                    html += "<div class='testing-date-indication w-condition-invisible'></div>";
-                                }
-                            html += "</div>";
-                        html += "</div>";
-                        if(varList[14] == ""){
-                            html += "<div class='testing-date-div testing-date-3 w-condition-invisible'>";
-                        } else {
-                            html += "<div class='testing-date-div testing-date-3'>";
-                        }
-                            html += "<div class='testing-date-sub-heading'>第三次檢測日期</div>";
-                            html += "<div class='testing-date-heading-div'>";
-                                html += "<h5 class='testing-date-heading'>" + varList[14] + "</h5>";
-                                html += "<h5 class='testing-date-heading-divider'>-</h5>";
-                                html += "<h5 class='testing-date-heading'>" + varList[15] + "</h5>";
-                                if(varList[16]== "Yes"){
-                                    html += "<div class='testing-date-indication'></div>";
-                                } else {
-                                    html += "<div class='testing-date-indication w-condition-invisible'></div>";
-                                }
-                            html += "</div>";
-                        html += "</div>";
-                    html += "</div>";
-                html += "</nav>";
             html += "</div>";
 
 
