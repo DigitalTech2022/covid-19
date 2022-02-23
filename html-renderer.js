@@ -48,12 +48,14 @@ window.onValue(compulsory_text, (snapshot) => {
                 html += "<div class='ct-content-case-number-and-date'>";
                     html += "<div class='ct-content-case-number-div'>";
                         html += "<div id='publish_date' class='ct-content-large-published-date'>" + varList[1] + "</div>";
-                html += "</div>";
+                    html += "</div>";
+                html += "</div";
                 html += "<div class='ct-content-address'>";
                     html += "<h2 class='ct-content-chinese-address'>" + varList[3] + "</h2>";
                     html += "<h3 class='ct-content-english-chinese'>" + varList[4] + "</h3>";
                 html += "</div>";
             html += "</div>";
+
             html += "<div class='ct-content-separated-line'></div>";
             html += "<div class='ct-content-second-row'>";
                 html += "<div class='specific-date-header-div'>";
