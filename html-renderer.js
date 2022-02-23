@@ -24,7 +24,7 @@ var third_testing_indication;
 const db = window.getDatabase()
 
 const compulsory_text = window.ref(db, 'Compulsory_Test');
-window.onValue(compulsory_text, (snapshot) => {
+onValue(compulsory_text, (snapshot) => {
     snapshot.forEach((childSnapshot) => {
         const childKey = childSnapshot.key;
         const childData = childSnapshot.val();
@@ -36,12 +36,6 @@ window.onValue(compulsory_text, (snapshot) => {
             varList[stringList.indexOf(data.key)] = data.val();
         });
 
-        for (var i = 0; i < varList.length; i++){
-            console.log(stringList[i] + ": " + varList[i]);
-        }
-
-        console.log(publish_date);
-        
         var html = "";
         html += "<div class='ct-content-div'>";
             html += "<div class='ct-content-first-row'>";
@@ -166,7 +160,9 @@ window.onValue(compulsory_text, (snapshot) => {
             html += "</div>";
         html += "</div>";
         document.getElementById("ct-custom-flexbox").innerHTML += html;
+
     });
 });
+
 
 </script>
