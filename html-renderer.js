@@ -132,6 +132,8 @@ onValue(compulsory_text, (snapshot) => {
         document.getElementById("ct-custom-flexbox").innerHTML += html;
         
     });
+    
+    document.getElementById("loading-spinner").style.display = "none";
 });
 
 
