@@ -36,7 +36,7 @@ onValue(compulsory_text, (snapshot) => {
             varList[stringList.indexOf(data.key)] = data.val();
         });
 
-        var html = "";
+       var html = "";
         html += "<div class='ct-content-div'>";
             html += "<div class='ct-content-first-row'>";
                 html += "<div class='ct-content-case-number-and-date'>";
@@ -101,6 +101,7 @@ onValue(compulsory_text, (snapshot) => {
                             if(varList[10]== "Yes"){
                                 "<div class='testing-date-indication'></div>";
                             } else {
+                                console.log("found");
                                 html += "<div class='testing-date-indication w-condition-invisible'></div>";
                             }
                         html += "</div>";
@@ -114,6 +115,7 @@ onValue(compulsory_text, (snapshot) => {
                             if(varList[13]== "Yes"){
                                 "<div class='testing-date-indication'></div>";
                             } else {
+                                console.log("found");
                                 html += "<div class='testing-date-indication w-condition-invisible'></div>";
                             }
                         html += "</div>";
@@ -127,6 +129,7 @@ onValue(compulsory_text, (snapshot) => {
                             if(varList[16]== "Yes"){
                                 "<div class='testing-date-indication'></div>";
                             } else {
+                                console.log("found");
                                 html += "<div class='testing-date-indication w-condition-invisible'></div>";
                             }
                         html += "</div>";
@@ -149,6 +152,7 @@ onValue(compulsory_text, (snapshot) => {
                                 if(varList[10]== "Yes"){
                                     "<div class='testing-date-indication'></div>";
                                 } else {
+                                    console.log("found");
                                     html += "<div class='testing-date-indication w-condition-invisible'></div>";
                                 }
                             html += "</div>";
@@ -162,6 +166,7 @@ onValue(compulsory_text, (snapshot) => {
                                 if(varList[13]== "Yes"){
                                     "<div class='testing-date-indication'></div>";
                                 } else {
+                                    console.log("found");
                                     html += "<div class='testing-date-indication w-condition-invisible'></div>";
                                 }
                             html += "</div>";
@@ -175,6 +180,7 @@ onValue(compulsory_text, (snapshot) => {
                                 if(varList[16]== "Yes"){
                                     "<div class='testing-date-indication'></div>";
                                 } else {
+                                    console.log("found");
                                     html += "<div class='testing-date-indication w-condition-invisible'></div>";
                                 }
                             html += "</div>";
