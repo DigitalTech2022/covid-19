@@ -98,42 +98,44 @@ onValue(compulsory_text, (snapshot) => {
                             html += "<h2 class='testing-date-heading'>" + varList[8] + "</h2>";
                             html += "<h2 class='testing-date-heading-divider'>-</h2>";
                             html += "<h2 class='testing-date-heading'>" + varList[9] + "</h2>";
-                            console.log(varList[10]);
                             if(varList[10]== "Yes"){
                                 html += "<div class='testing-date-indication'></div>";
                             } else {
-                                console.log("found");
                                 html += "<div class='testing-date-indication w-condition-invisible'></div>";
                             }
                             
                         html += "</div>";
                     html += "</div>";
-                    html += "<div class='testing-date-div testing-date-2'>";
+                    if(varList[11] == ""){
+                        html += "<div class='testing-date-div testing-date-2 w-condition-invisible'>";
+                    } else {
+                        html += "<div class='testing-date-div testing-date-2'>";
+                    }
                         html += "<div class='testing-date-sub-heading'>第二次檢測日期</div>";
                         html += "<div class='testing-date-heading-div'>";
                             html += "<h2 class='testing-date-heading'>" + varList[11] + "</h2>";
                             html += "<h2 class='testing-date-heading-divider'>-</h2>";
                             html += "<h2 class='testing-date-heading'>" + varList[12] + "</h2>";
-                            console.log(varList[13]);
                             if(varList[13]== "Yes"){
                                 html += "<div class='testing-date-indication'></div>";
                             } else {
-                                console.log("found");
                                 html += "<div class='testing-date-indication w-condition-invisible'></div>";
                             }
                         html += "</div>";
                     html += "</div>";
-                    html += "<div class='testing-date-div testing-date-3 w-condition-invisible'>";
+                    if(varList[14] == ""){
+                        html += "<div class='testing-date-div testing-date-3 w-condition-invisible'>";
+                    } else {
+                        html += "<div class='testing-date-div testing-date-3'>";
+                    }
                         html += "<div class='testing-date-sub-heading'>第三次檢測日期</div>";
                         html += "<div class='testing-date-heading-div'>";
                             html += "<h2 class='testing-date-heading w-dyn-bind-empty'>" + varList[14] + "</h2>";
                             html += "<h2 class='testing-date-heading-divider'>-</h2>";
                             html += "<h2 class='testing-date-heading w-dyn-bind-empty'>" + varList[15] + "</h2>";
-                            console.log(varList[16]);
                             if(varList[16]== "Yes"){
                                 html += "<div class='testing-date-indication'></div>";
                             } else {
-                                console.log("found");
                                 html += "<div class='testing-date-indication w-condition-invisible'></div>";
                             }
                         html += "</div>";
@@ -153,41 +155,43 @@ onValue(compulsory_text, (snapshot) => {
                                 html += "<h5 class='testing-date-heading'>" + varList[8] + "</h5>";
                                 html += "<h5 class='testing-date-heading-divider'>-</h5>";
                                 html += "<h5 class='testing-date-heading'>" + varList[9] + "</h5>";
-                                console.log(varList[10]);
                                 if(varList[10]== "Yes"){
                                     html += "<div class='testing-date-indication'></div>";
                                 } else {
-                                    console.log("found");
                                     html += "<div class='testing-date-indication w-condition-invisible'></div>";
                                 }
                             html += "</div>";
                         html += "</div>";
-                        html += "<div class='testing-date-div testing-date-2'>";
+                        if(varList[11] == ""){
+                            html += "<div class='testing-date-div testing-date-2 w-condition-invisible'>";
+                        } else {
+                            html += "<div class='testing-date-div testing-date-2'>";
+                        }
                             html += "<div class='testing-date-sub-heading'>第二次檢測日期</div>";
                             html += "<div class='testing-date-heading-div'>";
                                 html += "<h5 class='testing-date-heading'>" + varList[11] + "</h5>";
                                 html += "<h5 class='testing-date-heading-divider'>-</h5>";
                                 html += "<h5 class='testing-date-heading'>" + varList[12] + "</h5>";
-                                console.log(varList[13]);
                                 if(varList[13]== "Yes"){
                                     html += "<div class='testing-date-indication'></div>";
                                 } else {
-                                    console.log("found");
                                     html += "<div class='testing-date-indication w-condition-invisible'></div>";
                                 }
                             html += "</div>";
                         html += "</div>";
-                        html += "<div class='testing-date-div testing-date-3 w-condition-invisible'>";
+                        if(varList[14] == ""){
+                            html += "<div class='testing-date-div testing-date-3 w-condition-invisible'>";
+                        } else {
+                            html += "<div class='testing-date-div testing-date-3'>";
+                        }
                             html += "<div class='testing-date-sub-heading'>第三次檢測日期</div>";
                             html += "<div class='testing-date-heading-div'>";
                                 html += "<h5 class='testing-date-heading w-dyn-bind-empty'>" + varList[14] + "</h5>";
                                 html += "<h5 class='testing-date-heading-divider'>-</h5>";
                                 html += "<h5 class='testing-date-heading w-dyn-bind-empty'>" + varList[15] + "</h5>";
-                                console.log(varList[16]);
                                 if(varList[16]== "Yes"){
                                     html += "<div class='testing-date-indication'></div>";
                                 } else {
-                                    console.log("found");
                                     html += "<div class='testing-date-indication w-condition-invisible'></div>";
                                 }
                             html += "</div>";
