@@ -1,5 +1,26 @@
 <script>
 
+// define the variables
+var uid;
+var publish_date;
+var case_number; 
+var chinese_address;
+var english_address; 
+var specific_start;  
+var specific_end; 
+var testing_date_number; 
+var first_testing_start;  
+var first_testing_end; 
+var first_testing_indication; 
+var second_testing_start; 
+var second_testing_end;
+var second_testing_indication; 
+var third_testing_start; 
+var third_testing_end;
+var third_testing_indication; 
+var webflow_dropdown_count = 2;
+
+
 // Connect to Firebase Realtim Database
 const db = getDatabase();
 
@@ -7,25 +28,7 @@ const compulsory_text = window.ref(db, 'Compulsory_Test');
 onValue(compulsory_text, (snapshot) => {
     snapshot.forEach((childSnapshot) => {
 
-        // define the variables
-        var uid;
-        var publish_date;
-        var case_number; 
-        var chinese_address;
-        var english_address; 
-        var specific_start;  
-        var specific_end; 
-        var testing_date_number; 
-        var first_testing_start;  
-        var first_testing_end; 
-        var first_testing_indication; 
-        var second_testing_start; 
-        var second_testing_end;
-        var second_testing_indication; 
-        var third_testing_start; 
-        var third_testing_end;
-        var third_testing_indication; 
-        var webflow_dropdown_count = 2;
+        
 
         const childKey = childSnapshot.key;
         const childData = childSnapshot.val();
@@ -204,10 +207,10 @@ onValue(compulsory_text, (snapshot) => {
             html += "</div>";
         html += "</div>";
         document.getElementById("ct-custom-flexbox").innerHTML += html;
+        webflow_dropdown_count += 1;
         
     });
 });
-
 
 
 
