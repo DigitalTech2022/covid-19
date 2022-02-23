@@ -1,5 +1,6 @@
 <script>
 
+console.log("ok");
 // define the variables
 var uid;
 var publish_date;
