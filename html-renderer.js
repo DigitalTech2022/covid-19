@@ -23,7 +23,7 @@ var third_testing_indication;
 // Connect to Firebase Realtim Database
 const db = window.getDatabase()
 
-const compulsory_text = ref(db, 'Compulsory_Test');
+const compulsory_text = window.ref(db, 'Compulsory_Test');
 onValue(compulsory_text, (snapshot) => {
     snapshot.forEach((childSnapshot) => {
         const childKey = childSnapshot.key;
