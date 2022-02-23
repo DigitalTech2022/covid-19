@@ -40,6 +40,8 @@ window.onValue(compulsory_text, (snapshot) => {
             console.log(stringList[i] + ": " + varList[i]);
         }
 
+        console.log(publish_date);
+        
         var html = "";
         html += "<div class='ct-content-div'>";
             html += "<div class='ct-content-first-row'>";
