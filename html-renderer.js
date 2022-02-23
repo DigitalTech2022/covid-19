@@ -196,6 +196,7 @@ onValue(compulsory_text, (snapshot) => {
             html += "</div>";
         html += "</div>";
         document.getElementById("ct-custom-flexbox").innerHTML += html;
+        
     });
 });
 
