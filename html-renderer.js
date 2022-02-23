@@ -134,7 +134,7 @@ onValue(compulsory_text, (snapshot) => {
                             html += "<div class='testing-date-heading-div'>";
                                 html += "<h5 class='testing-date-heading'>" & first_testing_start & "</h5>";
                                 html += "<h5 class='testing-date-heading-divider'>-</h5>";
-                                html += "<h5 class='testing-date-heading'>" & first_testing_end &</h5>";
+                                html += "<h5 class='testing-date-heading'>" & first_testing_end & "</h5>";
                                 html += "<div class='testing-date-indication w-condition-invisible'></div>";
                             html += "</div>";
                         html += "</div>";
