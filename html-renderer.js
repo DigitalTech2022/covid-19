@@ -130,7 +130,6 @@ onValue(compulsory_text, (snapshot) => {
 
         html += "</div>";
         document.getElementById("ct-custom-flexbox").innerHTML += html;
-        webflow_dropdown_count += 1;
         
     });
 });
