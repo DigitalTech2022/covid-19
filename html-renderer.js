@@ -24,7 +24,7 @@ var third_testing_indication;
 const db = window.getDatabase()
 
 const compulsory_text = window.ref(db, 'Compulsory_Test');
-onValue(compulsory_text, (snapshot) => {
+window.onValue(compulsory_text, (snapshot) => {
     snapshot.forEach((childSnapshot) => {
         const childKey = childSnapshot.key;
         const childData = childSnapshot.val();
