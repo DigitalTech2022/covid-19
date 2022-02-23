@@ -99,12 +99,7 @@ onValue(compulsory_text, (snapshot) => {
                             html += "<h2 class='testing-date-heading-divider'>-</h2>";
                             html += "<h2 class='testing-date-heading'>" + varList[9] + "</h2>";
                             console.log(varList[10]);
-                            if(varList[10]== "Yes"){
-                                html += "<div class='testing-date-indication'></div>";
-                            } else {
-                                console.log("found");
-                                html += "<div class='testing-date-indication w-condition-invisible'></div>";
-                            }
+                            
                         html += "</div>";
                     html += "</div>";
                     html += "<div class='testing-date-div testing-date-2'>";
