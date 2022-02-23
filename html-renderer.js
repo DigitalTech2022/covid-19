@@ -21,7 +21,7 @@ var third_testing_end;
 var third_testing_indication; 
 
 // Connect to Firebase Realtim Database
-const db = getDatabase();
+const db = window.getDatabase()
 
 const compulsory_text = ref(db, 'Compulsory_Test');
 onValue(compulsory_text, (snapshot) => {
