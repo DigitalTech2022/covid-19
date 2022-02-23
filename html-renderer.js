@@ -1,31 +1,32 @@
 <script>
 
-console.log("ok");
-// define the variables
-var uid;
-var publish_date;
-var case_number; 
-var chinese_address;
-var english_address; 
-var specific_start;  
-var specific_end; 
-var testing_date_number; 
-var first_testing_start;  
-var first_testing_end; 
-var first_testing_indication; 
-var second_testing_start; 
-var second_testing_end;
-var second_testing_indication; 
-var third_testing_start; 
-var third_testing_end;
-var third_testing_indication; 
-
 // Connect to Firebase Realtim Database
-const db = window.getDatabase()
+const db = getDatabase();
 
 const compulsory_text = window.ref(db, 'Compulsory_Test');
 onValue(compulsory_text, (snapshot) => {
     snapshot.forEach((childSnapshot) => {
+
+        // define the variables
+        var uid;
+        var publish_date;
+        var case_number; 
+        var chinese_address;
+        var english_address; 
+        var specific_start;  
+        var specific_end; 
+        var testing_date_number; 
+        var first_testing_start;  
+        var first_testing_end; 
+        var first_testing_indication; 
+        var second_testing_start; 
+        var second_testing_end;
+        var second_testing_indication; 
+        var third_testing_start; 
+        var third_testing_end;
+        var third_testing_indication; 
+        var webflow_dropdown_count = 2;
+
         const childKey = childSnapshot.key;
         const childData = childSnapshot.val();
 
@@ -36,6 +37,7 @@ onValue(compulsory_text, (snapshot) => {
             varList[stringList.indexOf(data.key)] = data.val();
         });
 
+        
         var html = "";
         html += "<div class='ct-content-div'>";
             html += "<div class='ct-content-first-row'>";
@@ -205,6 +207,9 @@ onValue(compulsory_text, (snapshot) => {
         
     });
 });
+
+
+
 
 
 </script>
