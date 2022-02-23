@@ -36,7 +36,7 @@ onValue(compulsory_text, (snapshot) => {
             varList[stringList.indexOf(data.key)] = data.val();
         });
 
-       var html = "";
+        var html = "";
         html += "<div class='ct-content-div'>";
             html += "<div class='ct-content-first-row'>";
                 html += "<div class='ct-content-case-number-and-date'>";
@@ -98,6 +98,7 @@ onValue(compulsory_text, (snapshot) => {
                             html += "<h2 class='testing-date-heading'>" + varList[8] + "</h2>";
                             html += "<h2 class='testing-date-heading-divider'>-</h2>";
                             html += "<h2 class='testing-date-heading'>" + varList[9] + "</h2>";
+                            console.log(varList[10]);
                             if(varList[10]== "Yes"){
                                 "<div class='testing-date-indication'></div>";
                             } else {
@@ -112,6 +113,7 @@ onValue(compulsory_text, (snapshot) => {
                             html += "<h2 class='testing-date-heading'>" + varList[11] + "</h2>";
                             html += "<h2 class='testing-date-heading-divider'>-</h2>";
                             html += "<h2 class='testing-date-heading'>" + varList[12] + "</h2>";
+                            console.log(varList[13]);
                             if(varList[13]== "Yes"){
                                 "<div class='testing-date-indication'></div>";
                             } else {
@@ -126,6 +128,7 @@ onValue(compulsory_text, (snapshot) => {
                             html += "<h2 class='testing-date-heading w-dyn-bind-empty'>" + varList[14] + "</h2>";
                             html += "<h2 class='testing-date-heading-divider'>-</h2>";
                             html += "<h2 class='testing-date-heading w-dyn-bind-empty'>" + varList[15] + "</h2>";
+                            console.log(varList[16]);
                             if(varList[16]== "Yes"){
                                 "<div class='testing-date-indication'></div>";
                             } else {
@@ -149,6 +152,7 @@ onValue(compulsory_text, (snapshot) => {
                                 html += "<h5 class='testing-date-heading'>" + varList[8] + "</h5>";
                                 html += "<h5 class='testing-date-heading-divider'>-</h5>";
                                 html += "<h5 class='testing-date-heading'>" + varList[9] + "</h5>";
+                                console.log(varList[10]);
                                 if(varList[10]== "Yes"){
                                     "<div class='testing-date-indication'></div>";
                                 } else {
@@ -163,6 +167,7 @@ onValue(compulsory_text, (snapshot) => {
                                 html += "<h5 class='testing-date-heading'>" + varList[11] + "</h5>";
                                 html += "<h5 class='testing-date-heading-divider'>-</h5>";
                                 html += "<h5 class='testing-date-heading'>" + varList[12] + "</h5>";
+                                console.log(varList[13]);
                                 if(varList[13]== "Yes"){
                                     "<div class='testing-date-indication'></div>";
                                 } else {
@@ -177,6 +182,7 @@ onValue(compulsory_text, (snapshot) => {
                                 html += "<h5 class='testing-date-heading w-dyn-bind-empty'>" + varList[14] + "</h5>";
                                 html += "<h5 class='testing-date-heading-divider'>-</h5>";
                                 html += "<h5 class='testing-date-heading w-dyn-bind-empty'>" + varList[15] + "</h5>";
+                                console.log(varList[16]);
                                 if(varList[16]== "Yes"){
                                     "<div class='testing-date-indication'></div>";
                                 } else {
